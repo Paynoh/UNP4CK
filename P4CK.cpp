@@ -23,8 +23,6 @@ uint32_t P4CK::GetEntries(std::ifstream& PAK)
     PAK.seekg(8);
     char Buffer[4];
     PAK.read(Buffer, 4);
-    std::cout << std::endl;
-
     this->EntriesInBytes = static_cast<uint32_t>(static_cast<uint8_t>(Buffer[0])) |
         (static_cast<uint32_t>(static_cast<uint8_t>(Buffer[1])) << 8) |
         (static_cast<uint32_t>(static_cast<uint8_t>(Buffer[2])) << 16) |

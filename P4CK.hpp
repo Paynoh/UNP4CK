@@ -17,5 +17,4 @@ public:
 	uint32_t GetEntries(std::ifstream& PAK);
 	bool IsValidP4CK() const;
 	void DumpFile(std::ifstream& PAK);
-	//std::string Debug;
 };
